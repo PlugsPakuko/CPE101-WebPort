@@ -5,13 +5,21 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-window.addEventListener("scroll", function () {
-  var nav = document.querySelector("nav");
-  var scrollPosition = window.scrollY;
+fdocument.addEventListener("DOMContentLoaded", function () {
+  function handleScroll() {
+    var nav = document.querySelector("nav");
+    var scrollPosition = window.scrollY;
 
-  if (scrollPosition > 50) {
-    nav.classList.add("fixed-nav");
-  } else {
-    nav.classList.remove("fixed-nav");
+    if (scrollPosition > 50 && scrollPosition != 0) {
+      nav.classList.add("fixed-nav");
+    } else {
+      nav.classList.remove("fixed-nav");
+    }
   }
+
+  // Initial call to handleScroll to set the initial state
+  handleScroll();
+
+  // Add the scroll event listener
+  window.addEventListener("scroll", handleScroll);
 });

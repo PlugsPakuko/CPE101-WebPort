@@ -39,7 +39,7 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 12vh;
 }
 
 .nav-links {
@@ -168,6 +168,7 @@ section {
 /* PROFILE SECTION */
 
 #profile {
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -218,6 +219,7 @@ section {
 
 #about {
   position: relative;
+  margin: 8rem;
 }
 
 .about-containers {
