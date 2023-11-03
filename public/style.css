@@ -25,7 +25,6 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(213, 211, 211, 0.4);
   backdrop-filter: blur(100px);
   height: 12vh;
   transition: background-color 0.3s ease;
