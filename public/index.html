@@ -7,6 +7,7 @@
     <title>Pakkawat Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="./assets/profile-pic.png">
 
 
   </head>
@@ -24,7 +25,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Pakkawat</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -41,7 +42,7 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/profile-pic.png" alt="profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -97,7 +98,7 @@
               class="education-img"
             />
           </div>
-          <h2 class="experience-sub-title education-title">KMUTT</h2>
+          <h2 class="education education-title">KMUTT</h2>
           <p>2023 - NOW</p>
         </div>
 
@@ -109,7 +110,7 @@
               class="education-img"
             />
           </div>
-          <h2 class="experience-sub-title education-title">PCSHSM</h2>
+          <h2 class="education-sub-title education-title">PCSHSM</h2>
           <p>2016 - 2022</p>
         </div>
       </div>
@@ -265,6 +266,25 @@
       </div>
     </section>
     <script src="script.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBxYPmIVo-9O9lc9KMzt7-wW9BfuCRm5BM",
+        authDomain: "webportcpe101.firebaseapp.com",
+        projectId: "webportcpe101",
+        storageBucket: "webportcpe101.appspot.com",
+        messagingSenderId: "1043441886002",
+        appId: "1:1043441886002:web:e71d6d647cd2a7341b2d2b"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
   </body>
   
 </html>
